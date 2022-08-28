@@ -4,8 +4,13 @@ import 'package:test/test.dart';
 // https://atcoder.jp/contests/abs/tasks/abc086_a
 
 String solver(String input) {
+  final a = int.parse(input.split(' ')[0]);
+  final b = int.parse(input.split(' ')[1]);
+  if (a % 2 == 0 || b % 2 == 0) {
+    return 'Event';
+  }
   // 実装してください！
-  return "";
+  return "Odd";
 }
 
 // 以下テストコード
