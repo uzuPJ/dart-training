@@ -22,4 +22,10 @@ void main() {
 1 21
 """), equals('Odd'));
   });
+
+  test('Custom Case 1', () async {
+    expect(solver("""
+24 22
+"""), equals('Even'));
+  });
 }
