@@ -21,8 +21,76 @@ jobs:
       - run: dart pub get
       - run: dart at-coder/2_abc086_a.dart
 
+  abc081_a:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dart-lang/setup-dart@v1.3
+      - run: dart pub get
+      - run: dart at-coder/3_abc081_a.dart
 
+  abc081_b:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dart-lang/setup-dart@v1.3
+      - run: dart pub get
+      - run: dart at-coder/4_abc081_b.dart
 
+  abc087_b:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dart-lang/setup-dart@v1.3
+      - run: dart pub get
+      - run: dart at-coder/5_abc087_b.dart
 
+  abc083_b:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dart-lang/setup-dart@v1.3
+      - run: dart pub get
+      - run: dart at-coder/6_abc083_b.dart
+
+  abc088_b:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dart-lang/setup-dart@v1.3
+      - run: dart pub get
+      - run: dart at-coder/7_abc088_b.dart
+
+  abc085_b:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dart-lang/setup-dart@v1.3
+      - run: dart pub get
+      - run: dart at-coder/8_abc085_b.dart
+
+  abc085_c:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dart-lang/setup-dart@v1.3
+      - run: dart pub get
+      - run: dart at-coder/9_abc085_c.dart
+
+  abc049_c:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dart-lang/setup-dart@v1.3
+      - run: dart pub get
+      - run: dart at-coder/10_abc049_c.dart
+
+  abc086_c:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dart-lang/setup-dart@v1.3
+      - run: dart pub get
+      - run: dart at-coder/11_abc086_c.dart
 
 
