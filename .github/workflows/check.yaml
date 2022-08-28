@@ -1,0 +1,28 @@
+name: Mobile CI
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  practice_a:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dart-lang/setup-dart@v1.3
+      - run: dart pub get
+      - run: dart at-coder/1_practice_a.dart
+
+  abc086_a:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dart-lang/setup-dart@v1.3
+      - run: dart pub get
+      - run: dart at-coder/2_abc086_a.dart
+
+
+
+
+
+
