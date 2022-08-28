@@ -7,7 +7,7 @@ String solver(String input) {
   final a = int.parse(input.split(' ')[0]);
   final b = int.parse(input.split(' ')[1]);
   if (a % 2 == 0 || b % 2 == 0) {
-    return 'Event';
+    return 'Even';
   }
   // 実装してください！
   return "Odd";
