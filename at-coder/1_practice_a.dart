@@ -12,8 +12,14 @@ import 'package:test/test.dart';
 // final s = input_list[2];
 
 String solver(String input) {
-  // 実装してください！
-  return "";
+  final input_list = input.split('\n');
+  int a = int.parse(input_list[0]);
+  final l2 = input_list[1].split(' ');
+  int b = int.parse(l2[0]);
+  int c = int.parse(l2[1]);
+  final s = input_list[2];
+
+  return "${a + b + c} $s";
 }
 
 // 以下テストコード
