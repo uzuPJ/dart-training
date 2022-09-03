@@ -5,7 +5,20 @@ import 'package:test/test.dart';
 
 String solver(String input) {
   // 実装してください！
-  return "";
+  final inputList = input.split(' ');
+  final a = int.parse(inputList[0]);
+  final b = int.parse(inputList[1]);
+  String isEven(int inputA, int inputB) {
+    if ((inputA * inputB) % 2 == 0) {
+      return "Even";
+    } else {
+      return "Odd";
+    }
+  }
+
+  ;
+
+  return isEven(a, b);
 }
 
 // 以下テストコード
