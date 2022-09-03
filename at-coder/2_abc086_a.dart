@@ -4,10 +4,6 @@ import 'package:test/test.dart';
 // https://atcoder.jp/contests/abs/tasks/abc086_a
 
 String solver(String input) {
-  // input を受けて、変数a,b に代入する
-  final a = int.parse(input.split(' ')[0]);
-  final b = int.parse(input.split(' ')[1]);
-
   // 実装してください！
   final inputList = input.split(' ');
   final a = int.parse(inputList[0]);
@@ -19,8 +15,6 @@ String solver(String input) {
       return "Odd";
     }
   }
-
-  ;
 
   return isEven(a, b);
 }
