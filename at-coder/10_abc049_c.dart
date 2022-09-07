@@ -5,7 +5,32 @@ import 'package:test/test.dart';
 
 String solver(String input) {
   // 実装してください！
-  return "";
+  final S = input.trim();
+  var List = ["dream", "dreamer", "erase", "eraser"];
+  String x;
+  String y;
+  String T;
+  String? ans;
+
+  for (int n = 0; n <= 3; n++) {
+    for (int m = 0; m <= 3; m++) {
+      x = List[n];
+      y = List[m];
+      T = x + y;
+
+      if (S == T) {
+        print("YES");
+        ans = "YES";
+        break;
+      } else {
+        ans = "NO";
+      }
+    }
+    if (ans == "YES") {
+      break;
+    }
+  }
+  return "$ans";
 }
 
 // 以下テストコード
