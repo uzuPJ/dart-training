@@ -14,13 +14,9 @@ String solver(String input) {
   final C = int.parse(inputList[2]);
   final N = int.parse(inputList[3]);
 
-  var a = 0;
-  var b = 0;
-  var c = 0;
-
-  for (a = 0; a <= A; a++) {
-    for (b = 0; b <= B; b++) {
-      for (c = 0; c <= C; c++) {
+  for (var a = 0; a <= A; a++) {
+    for (var b = 0; b <= B; b++) {
+      for (var c = 0; c <= C; c++) {
         if (500 * a + 100 * b + 50 * c == N) {
           ans++;
         }
