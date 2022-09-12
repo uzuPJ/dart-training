@@ -16,7 +16,7 @@ void main() {
 2
 3 1 2
 6 1 1
-"""), equals('2'));
+"""), equals('Yes'));
   });
 
   test('Case 2', () async {
@@ -32,5 +32,14 @@ void main() {
 5 1 1
 100 1 1
 """), equals('No'));
+  });
+
+  test('Case 3', () async {
+    expect(solver("""
+3
+4 1 1
+9 2 3
+14 1 1
+"""), equals('Yes'));
   });
 }
