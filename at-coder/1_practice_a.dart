@@ -4,17 +4,15 @@ import 'package:test/test.dart';
 // https://atcoder.jp/contests/abs/tasks/practice_1
 
 String solver(String input) {
-  // input を受けて、変数a,b,c,s に代入する
-  final input_list = input.split('\n');
-  int a = int.parse(input_list[0]);
-  final l2 = input_list[1].split(' ');
-  int b = int.parse(l2[0]);
-  int c = int.parse(l2[1]);
-  final s = input_list[2];
-
   // 実装してください！
+  final inputList = input.split('\n');
+  final a = int.parse(inputList[0]);
+  final l2 = inputList[1].split(' ');
+  final b = int.parse(l2[0]);
+  final c = int.parse(l2[1]);
+  final s = inputList[2];
 
-  return "";
+  return "${a + b + c} $s";
 }
 
 // 以下テストコード

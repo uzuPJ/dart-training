@@ -5,7 +5,17 @@ import 'package:test/test.dart';
 
 String solver(String input) {
   // 実装してください！
-  return "";
+  final inputList = input.split('\n');
+  final N = int.parse(inputList[0]);
+  var l = inputList[1].split(' ').map(int.parse).toList();
+  var ans = 0;
+
+  while (l.every((x) => x % 2 == 0)) {
+    l = l.map((x) => x ~/ 2).toList();
+    ans++;
+  }
+
+  return "$ans";
 }
 
 // 以下テストコード

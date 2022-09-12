@@ -5,7 +5,26 @@ import 'package:test/test.dart';
 
 String solver(String input) {
   // 実装してください！
-  return "";
+
+  var ans = 0;
+
+  final inputList = input.split('\n');
+  final A = int.parse(inputList[0]);
+  final B = int.parse(inputList[1]);
+  final C = int.parse(inputList[2]);
+  final N = int.parse(inputList[3]);
+
+  for (var a = 0; a <= A; a++) {
+    for (var b = 0; b <= B; b++) {
+      for (var c = 0; c <= C; c++) {
+        if (500 * a + 100 * b + 50 * c == N) {
+          ans++;
+        }
+      }
+    }
+  }
+
+  return "$ans";
 }
 
 // 以下テストコード

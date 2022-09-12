@@ -5,7 +5,18 @@ import 'package:test/test.dart';
 
 String solver(String input) {
   // 実装してください！
-  return "";
+  var riceCakes = input.trim().split('\n');
+  riceCakes.remove(riceCakes[0]);
+
+  print(riceCakes);
+
+  var riceCakesSet = riceCakes.toSet();
+
+  print(riceCakesSet);
+
+  var ans = riceCakesSet.length;
+
+  return "$ans";
 }
 
 // 以下テストコード
